@@ -1,0 +1,98 @@
+html {
+    position: relative;
+}
+
+body {
+    margin-bottom: 100px;
+    margin-top: 30px;
+}
+
+.jumbotron {
+    background-image: url(../img/parallax.jpg);
+    background-attachment: fixed;
+    background-position: 0 50px;
+    background-size: cover;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+
+.jumbotron h1,
+.jumbotron p {
+    text-shadow: 1px 1px 10px rgba(250, 250, 250, 0.945);
+}
+
+.jumbotron img {
+    width: 200px;
+    border: 5px solid rgb(0, 0, 0);
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.945);
+}
+
+.pKiri,
+.pKanan {
+    opacity: 0;
+    transform: translate(1000px, 0);
+    transition: 1s;
+}
+
+.pKanan {
+    transform: translate(-1000px, 0);
+}
+
+.pKiri.pMuncul,
+.pKanan.pMuncul {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+
+.contact {
+    min-height: 800px;
+    padding-top: 10px;
+}
+
+hr {
+    border-top: 3px solid steelblue;
+    width: 250px;
+}
+
+section {
+    min-height: 600px;
+}
+
+.portfolio {
+    background-color: #E9ECEF;
+    padding-top: 10px;
+}
+
+.portfolio .img-thumbnail {
+    opacity: 0;
+    transform: scale(0);
+    transition: .5s;
+}
+
+.portfolio .img-thumbnail.muncul {
+    opacity: 1;
+    transform: scale(1);
+}
+
+footer {
+    background-color: #333;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+}
+
+footer p {
+    padding-top: 30px;
+    color: white;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: steelblue;
+}
+
+footer a:hover {
+    color: white;
+}
